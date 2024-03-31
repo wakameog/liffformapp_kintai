@@ -65,7 +65,7 @@
                 const date = $('input[name="date"]').val();
                 const name = $('input[name="name"]').val();
                 const work_hours = $('input[name="work_hours"]').val();
-                const msg = `日付: ${date}\n氏名: ${name}\n勤務時間: ${work_hours}`;
+                const msg = `${date}\n${name}\n${work_hours}`;
                 sendText(msg);
                 return false;
             });
