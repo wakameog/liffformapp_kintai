@@ -9,6 +9,8 @@
 </head>
 <body>
 
+    <h1 class="text-center mt-5">勤怠管理フォーム</h1>
+
     <form class="w-75 mx-auto">
         <p class="mt-3">日付</p>
         <div>
@@ -63,7 +65,7 @@
                 const date = $('input[name="date"]').val();
                 const name = $('input[name="name"]').val();
                 const work_hours = $('input[name="work_hours"]').val();
-                const msg = `${date}\n${name}\n${work_hours}`;
+                const msg = `日付: ${date}\n氏名: ${name}\n勤務時間: ${work_hours}`;
                 sendText(msg);
                 return false;
             });
